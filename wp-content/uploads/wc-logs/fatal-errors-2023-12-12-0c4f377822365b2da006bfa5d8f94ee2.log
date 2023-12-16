@@ -1,0 +1,30 @@
+2023-12-12T17:01:14+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function WOOF_SEO::set_page_title(), 1 passed in C:\xampp\htdocs\soko\wp-includes\class-wp-hook.php on line 324 and exactly 2 expected in C:\xampp\htdocs\soko\wp-content\plugins\woocommerce-products-filter\ext\url_request\classes\seo.php:201
+Stack trace:
+#0 C:\xampp\htdocs\soko\wp-includes\class-wp-hook.php(324): WOOF_SEO->set_page_title('accessories')
+#1 C:\xampp\htdocs\soko\wp-includes\plugin.php(205): WP_Hook->apply_filters('accessories', Array)
+#2 C:\xampp\htdocs\soko\wp-content\themes\besa\inc\vendors\elementor\elements\woocommerce\woocommerce-tags.php(82): apply_filters('the_title', 'accessories')
+#3 C:\xampp\htdocs\soko\wp-content\themes\besa\elementor_templates\woocommerce-tags.php(13): Besa_Elementor_Woocommerce_Tags->render_item()
+#4 C:\xampp\htdocs\soko\wp-content\themes\besa\inc\vendors\elementor\abstract\base.php(56): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\soko\wp-content\themes\besa\inc\vendors\elementor\abstract\base.php(66): Besa_Elementor_Widget_Base->get_view_template('woocommerce-tag...', '', Array)
+#6 C:\xampp\htdocs\soko\wp-content\plugins\elementor\includes\base\controls-stack.php(2297): Besa_Elementor_Widget_Base->render()
+#7 C:\xampp\htdocs\soko\wp-content\plugins\elementor\includes\base\widget-base.php(614): Elementor\Controls_Stack->render_by_mode()
+#8 C:\xampp\htdocs\soko\wp-content\plugins\elementor\includes\base\widget-base.php(755): Elementor\Widget_Base->render_content()
+#9 C:\xampp\htdocs\soko\wp-content\plugins\elementor\includes\base\element-base.php(464): Elementor\Widget_Base->print_content()
+#10 C:\xampp\htdocs\soko\wp-content\plugins\elementor\includes\base\element-base.php(1375): Elementor\Element_Base->print_element()
+#11 C:\xampp\htdocs\soko\wp-content\plugins\elementor\includes\base\element-base.php(464): Elementor\Element_Base->print_content()
+#12 C:\xampp\htdocs\soko\wp-content\plugins\elementor\includes\base\element-base.php(1375): Elementor\Element_Base->print_element()
+#13 C:\xampp\htdocs\soko\wp-content\plugins\elementor\includes\base\element-base.php(464): Elementor\Element_Base->print_content()
+#14 C:\xampp\htdocs\soko\wp-content\plugins\elementor\core\base\document.php(1749): Elementor\Element_Base->print_element()
+#15 C:\xampp\htdocs\soko\wp-content\plugins\elementor\core\base\document.php(1144): Elementor\Core\Base\Document->print_elements(Array)
+#16 C:\xampp\htdocs\soko\wp-content\plugins\elementor\includes\frontend.php(1179): Elementor\Core\Base\Document->print_elements_with_wrapper(Array)
+#17 C:\xampp\htdocs\soko\wp-content\plugins\elementor\includes\frontend.php(1074): Elementor\Frontend->get_builder_content(2584)
+#18 C:\xampp\htdocs\soko\wp-includes\class-wp-hook.php(324): Elementor\Frontend->apply_builder_in_content('[rev_slider ali...')
+#19 C:\xampp\htdocs\soko\wp-includes\plugin.php(205): WP_Hook->apply_filters('[rev_slider ali...', Array)
+#20 C:\xampp\htdocs\soko\wp-includes\post-template.php(256): apply_filters('the_content', '[rev_slider ali...')
+#21 C:\xampp\htdocs\soko\wp-content\themes\besa\page.php(33): the_content()
+#22 C:\xampp\htdocs\soko\wp-includes\template-loader.php(106): include('C:\\xampp\\htdocs...')
+#23 C:\xampp\htdocs\soko\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#24 C:\xampp\htdocs\soko\index.php(17): require('C:\\xampp\\htdocs...')
+#25 {main}
+  thrown in C:\xampp\htdocs\soko\wp-content\plugins\woocommerce-products-filter\ext\url_request\classes\seo.php on line 201
+
